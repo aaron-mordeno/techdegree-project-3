@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+}
+
+header {
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 1.5em 1.5em;
+}
+
+form {
+    margin: 5%;
+}
+
+fieldset {
+    border: none;
+    margin: 1em auto;
+}
+
+legend {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+}
+
+input,
+select {
+    height: 3em;
+}
+
+textarea {
+    height: 4.5em;
+    margin-top: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 20px rgb(0, 79, 182);
+    background-color: rgb(225, 235, 255);
+}
+
+.input {
+    margin-top: 1em;
+}
+
+input[placeholder] {
+    float: right;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .signup,
+    form {
+        margin: 0 20%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 70%;
+    }
+
+    input,
+    textarea,
+    select {
+        margin-bottom: 0;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+    }
+}
